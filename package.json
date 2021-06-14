@@ -1,0 +1,43 @@
+{
+  "name": "ts-grqphql-koa",
+  "version": "1.0.0",
+  "description": "ts-grqphql-koa",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon --watch src -e ts --exec ts-node src/app.ts",
+    "start": "npm run dev",
+    "build": "tsc",
+    "build-server": "tslint --project . && tsc",
+    "dev": "cross-env NODE_ENV=development nodemon --config nodemon.json",
+    "test": "NODE_ENV=development node ./release/conf/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13142025891/ts-grqphql-koa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/13142025891/ts-grqphql-koa/issues"
+  },
+  "homepage": "https://github.com/13142025891/ts-grqphql-koa#readme",
+  "devDependencies": {
+    "@types/koa": "^2.13.3",
+    "@types/koa-bodyparser": "^4.3.1",
+    "@types/koa-router": "^7.4.2",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "apollo-server-koa": "^2.25.1",
+    "class-validator": "^0.13.1",
+    "graphql": "^15.5.0",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "moment": "^2.29.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  }
+}
