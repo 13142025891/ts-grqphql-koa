@@ -4,8 +4,9 @@
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "noEmit": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    //变量为使用检测
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "noImplicitAny": true,
     "preserveConstEnums": true,
     "removeComments": false,
